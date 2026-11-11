@@ -75,21 +75,6 @@ train_ds = tf.keras.utils.image_dataset_from_directory(
     train_dir,
     image_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
-    shuffle=True,
-    seed=42
-)
-
-test_ds = tf.keras.utils.image_dataset_from_directory(
-    test_dir,
-    image_size=IMG_SIZE,
-    batch_size=BATCH_SIZE,
-    shuffle=False
-)
-
-train_ds = tf.keras.utils.image_dataset_from_directory(
-    train_dir,
-    image_size=IMG_SIZE,
-    batch_size=BATCH_SIZE,
     validation_split=0.2,
     subset="training",
     seed=42

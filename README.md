@@ -5,7 +5,7 @@ A CNN that classifies an image as a cat or a dog, with a FastAPI page to upload 
 ## Files
 
 - `cnn_catdog.py`: Colab script that trains the CNN, saves it and evaluates it on the test set
-- `catdof_fast.py`: FastAPI app, loads the model and serves the upload page and `/predict`
+- `catdog_app.py`: FastAPI app, loads the model and serves the upload page and `/predict`
 - `catdog.keras`: the trained model
 - `requirements.txt`: Python packages needed to run the app
 - `.gitignore`: files git should ignore
@@ -14,8 +14,8 @@ A CNN that classifies an image as a cat or a dog, with a FastAPI page to upload 
 
 1. Clone the repo and move into it
    ```
-   git clone https://github.com/<your-username>/catdog-classifier.git
-   cd catdog-classifier
+   git clone https://github.com/iqra-imran-1/Cat-Dog.git
+   cd Cat-Dog
    ```
 2. Create and activate an environment
    ```
@@ -28,7 +28,7 @@ A CNN that classifies an image as a cat or a dog, with a FastAPI page to upload 
    ```
 4. Start the app from inside the repo folder
    ```
-   uvicorn catdof_fast:app --reload
+   uvicorn catdog_app:app --reload
    ```
 5. Open http://127.0.0.1:8000, upload an image and click Classify
 
